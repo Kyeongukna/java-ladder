@@ -1,14 +1,44 @@
-# java-ladder
-사다리 게임 미션 저장소
+#java - ladder
 
-* 미션 마감 시간
-  * 1차 : 11월 02일
-  * 2차 : 11월 09일
-  * 3차 : 11월 16일
-  * 4차 : 11월 23일
-  
-* [미션 시작하기](https://github.com/backlo-study-programing/study-docs/blob/master/%EB%AF%B8%EC%85%98%20%EC%8B%9C%EC%9E%91.md)
- 
-* [온라인 코드 리뷰 과정](https://github.com/backlo-study-programing/study-docs/blob/master/%EC%BD%94%EB%93%9C%20%EB%A6%AC%EB%B7%B0.md)
-
-* [참고 자료](https://github.com/backlo-study-programing/study-docs/blob/master/Java%20%EC%9E%90%EB%A3%8C/%EC%9E%90%EB%B0%94%20%EC%9E%90%EB%A3%8C.md)
+## 요구사항
+    - 참여 사람의 이름을 입력받는다.
+    - 사람의 이름은 최대 5글자로 제한한다.
+    - 사람의 이름은 쉼표(,)를 기준으로 구분한다.
+    - 사람의 이름과 사다리의 폭을 맞춰야한다.
+    - 사다리 라인이 겹치지 않아야한다.
+    
+##  기능 설명
+    * LadderManager 
+        - 사다리와 참여 사람을 입력받아 게임을 진행합니다.
+        - 참여 사람을 InputUser를 통해 입력받습니다.
+        - 사다리 높이를 InputLadderHeight를 통해 입력받습니다.
+        - 입력받은 정보를 Ladder 와 Users 에게 전달해줍니다.
+        - 정보를 조작한 후 PrintLadder 와 PirntUser 에게 전달해 결과를 출력합니다.
+        
+     * Ladder
+        - 사다리 역할을 수행합니다.
+        - Line 객체를 List로 갖고 있습니다.
+     
+     * Line
+        - 사다리의 한 줄 역할을 수행합니다.
+        - 사다리가 연결될 수 있는지 판단합니다.
+     
+     * Users
+        - 참여 사람들의 정보를 List 형태로 저장합니다.
+        - 참여 사람들의 이름이 5자 이내인지 확인합니다.
+     
+     * InputLadderHeight
+        - 사다리의 높이를 입력받습니다.
+        - 입력받은 높이를 전달해줍니다.
+     
+     * InputUser
+        - 참여 사람들의 이름을 입력받습니다.
+        - 입력받은 사람의 이름을 전달해줍니다.
+    
+     * PrintLadder
+        - 사다리의 결과값을 출력해줍니다.
+        
+     * PrintUser
+        - 참여 사람의 이름을 규칙에 맞게 출력해줍니다.
+        - 사람의 이름 길이마다 폭을 다르게 출력합니다.
+        
