@@ -3,7 +3,7 @@ package view;
 import java.util.List;
 
 public class PrintUser {
-    private final int MAX_NAME_LANGTH = 5;
+    private static final int MAX_NAME_LANGTH = 5;
     public PrintUser(List<String> users) {
         printUsers(users);
     }
