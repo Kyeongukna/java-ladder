@@ -19,9 +19,10 @@ public class Line {
         boolean previousLine = false ;
         points.add(false);
         for (int i = 1; i < countOfPerson ; i++) {
-            previousLine = points.get(i-1);
+            previousLine = points.get(i - 1);
             points.add(!previousLine && RandomLine());
         }
+        points.add(false);
     }
 
     public List<Boolean> getPoint () {
